@@ -49,6 +49,17 @@ public class Rennschnecke {
 		
 	}
 	
+	public String toString() {
+	
+		
+		String rückgabe ="";
+		rückgabe= "Die Schnecke heißt: "+ this.getName()  + "\nDie Rasse ist: " + this.getRasse() +
+				"\nMaximalgeschwindigkeit: " + this.getMaximalGeschwindigkeit() + "\nzurückgelegter Weg: " + this.getGesamtWeg();
+		return rückgabe;
+		
+				
+		
+	}
 
 	
 }
