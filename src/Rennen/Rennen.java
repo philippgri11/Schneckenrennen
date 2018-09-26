@@ -73,7 +73,15 @@ public class Rennen {
 		return null;
 	}
 	
+	public void lassSchneckenKriechen() {
+		for(int i = 0; i < this.getAnzahl(); i++) {
+			this.getSchnecken()[i].krieche();
+		}
+	}
+	
 	public void durchfuehren() {
-		//mach weiter
+		while(this.ermittleGewinner() == null) {
+			this.lassSchneckenKriechen();
+		}
 	}
 }
